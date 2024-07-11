@@ -1,7 +1,7 @@
-const SearchIcon = () => {
+const SearchIcon = ({ size = 22 }: { size?: string | number }) => {
   return (
     <svg
-      width="22"
+      width={size}
       height="22"
       viewBox="0 0 22 22"
       fill="none"

@@ -143,8 +143,8 @@ module.exports = {
       blueSecondary: "#4318FF",
       brandLinear: "#868CFF",
       gray: {
-        50: "#fcfcfc",
-        100: "#f8f8f8",
+        50: "#F7F6F4",
+        100: "#DEDEDE",
         200: "#f2f2f2",
         300: "#ededed",
         400: "#e8e8e8",
