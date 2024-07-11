@@ -6,6 +6,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["SFProDisplay", "sans-serif"],
+      },
       width: {
         "1p": "1%",
         "2p": "2%",
