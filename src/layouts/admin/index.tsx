@@ -57,11 +57,7 @@ export default function Admin(props: { [x: string]: any }) {
         >
           {/* Routes */}
           <div className="h-full">
-            <Navbar
-              onOpenSidenav={() => setOpen(true)}
-              // secondary={getActiveNavbar(routes)}
-              {...rest}
-            />
+            <Navbar onOpenSidenav={() => setOpen(true)} {...rest} />
             <div className="pt-5s mx-auto mb-auto h-full min-h-[84vh] p-2 md:pr-2">
               <Routes>
                 {getRoutes(routes)}
