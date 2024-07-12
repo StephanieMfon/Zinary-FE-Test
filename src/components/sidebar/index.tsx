@@ -41,7 +41,7 @@ const Sidebar = (props: {
       <ul className="mb-auto pt-1">
         <Links routes={routes} />
       </ul>
-      <img className="" src={sidebarBanner} alt="DailyWork" />
+      <img className="" src={sidebarBanner} alt="Z" />
     </div>
   );
 };

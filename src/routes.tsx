@@ -26,7 +26,7 @@ const routes = [
   {
     name: "Dashboard",
     layout: "/admin",
-    path: "default",
+    path: "random",
     icon: <DashboardIcon />,
     component: <MainDashboard />,
     rightIcon: <DownArrow />,
@@ -54,7 +54,7 @@ const routes = [
   {
     name: "Transactions",
     layout: "/auth",
-    path: "sign-in",
+    path: "random",
     icon: <TransactionIcon />,
     component: <SignIn />,
   },
@@ -75,7 +75,7 @@ const routes = [
   {
     name: "Wallet",
     layout: "/admin",
-    path: "wallet",
+    path: "default",
     icon: <WalletIcon />,
     component: <MainDashboard />,
   },
