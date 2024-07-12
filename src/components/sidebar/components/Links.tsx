@@ -44,7 +44,7 @@ export const SidebarLinks = (props: { routes: RoutesType[] }): JSX.Element => {
                   className={`leading-1 ml-4 flex ${
                     activeRoute(route.path) === true
                       ? "font-[700] text-navy-700 dark:text-white"
-                      : "font-[700] text-gray-600"
+                      : "font-[700] text-gray-900"
                   }`}
                 >
                   {route.name}

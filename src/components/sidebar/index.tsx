@@ -26,7 +26,7 @@ const Sidebar = (props: {
       </span>
 
       <ul
-        className={`mx-[25px] mt-[40px] flex-col items-center rounded-[10px] bg-orange-2000 p-[15px]`}
+        className={`mx-[20px] mb-[35px] mt-[30px] flex-col items-center rounded-[10px] bg-orange-2000 p-[15px]`}
       >
         <li className="flex items-center justify-between">
           <p className="text-[16px] font-[700] text-white">General</p>

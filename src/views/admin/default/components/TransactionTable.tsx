@@ -60,11 +60,11 @@ const ProductTable = () => {
       </div>
 
       {/* Table Body */}
-      <div className="space-y-2 ">
+      <div className="space-y-3 ">
         {tableData.map((item, index) => (
           <div
             key={index}
-            className="rounded-lg bg-white px-5 py-6 font-[15px] text-gray-900 shadow"
+            className="rounded-lg bg-white px-5 py-6 font-[15px] text-gray-1000 shadow-[0px_5px_9px_-5px_#0000000D] shadow-none dark:!bg-cyan-900 dark:text-white"
           >
             <div className="j flex">
               <div className="flex-1 text-left">{item.id}</div>
