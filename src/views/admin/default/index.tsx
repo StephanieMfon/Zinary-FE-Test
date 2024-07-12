@@ -25,7 +25,7 @@ const Dashboard = () => {
       <div className="flex justify-between">
         <h1 className="text-[30px] font-bold text-gray-1000">WalletOverview</h1>
 
-        <div className="flex items-center gap-4">
+        <div className="hidden items-center gap-4 md:flex">
           <p className="text-[16px] font-medium text-gray-200">Duration</p>
           <HeaderDropdown />
         </div>
@@ -34,7 +34,7 @@ const Dashboard = () => {
 
       {/* Chart and Data */}
 
-      <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-[30%_270px_1fr]">
+      <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-[1fr_1fr] lg:grid-cols-[30%_270px_1fr]">
         <SummarySection />
         <SummaryCard />
         <TotalSpent />

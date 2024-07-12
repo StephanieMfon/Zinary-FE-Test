@@ -3,7 +3,7 @@ import balancesBackground from "../../../../assets/img/admin/account-balance-ove
 
 export default function SummaryCard() {
   return (
-    <div className="w-[260px] rounded-[10px] bg-orange-2000 p-4">
+    <div className="w-full rounded-[10px] bg-orange-2000 p-4 lg:w-[260px]">
       <div
         className="space-y-1"
         style={{
