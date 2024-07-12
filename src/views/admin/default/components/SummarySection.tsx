@@ -7,15 +7,15 @@ export default function SummarySection() {
         {Array.from({ length: 4 }, (_, index) => (
           <div
             key={index}
-            className="rounded-[12px] bg-orange-100 px-[17px] py-[24px]"
+            className="rounded-[12px] bg-orange-100 px-[17px] py-[24px] dark:bg-gray-1000"
           >
-            <p className="font-200 text-[16px] font-bold text-gray-1000">
+            <p className="font-200 text-[16px] font-bold text-gray-1000 dark:text-orange-100">
               Withdrawals
             </p>
-            <p className="mt-5 text-left text-[23px] font-bold text-orange-2000">
+            <p className="mt-5 text-left text-[1rem] font-bold text-orange-2000 md:text-[1.438rem] ">
               N3,402,300
             </p>
-            <span className="font-200 text-[15px] text-gray-1000">
+            <span className="font-200 text-[15px] text-gray-1000 dark:text-orange-100">
               722 cases
             </span>
           </div>
@@ -24,7 +24,9 @@ export default function SummarySection() {
 
       <div className=" mt-8 flex items-center justify-between rounded-[8px] bg-gray-1000 px-[17px] py-[27px]">
         <p className="text-[17px] font-bold text-white">Total Amount</p>
-        <p className="text-[23px] font-bold text-white">N3,402,300</p>
+        <p className="md:text-[1.438rem]font-bold text-[1rem] text-white">
+          N3,402,300
+        </p>
       </div>
     </Card>
   );

@@ -9,7 +9,7 @@ const TotalSpent = () => {
   return (
     <Card extra="!p-[20px] text-center">
       <div className="flex h-full w-full flex-row justify-between sm:flex-wrap lg:flex-nowrap 2xl:overflow-hidden">
-        <div className="h-full w-full">
+        <div className="h-full min-h-[220px] w-full">
           <LineChart
             chartOptions={lineChartOptionsTotalSpent}
             chartData={lineChartDataTotalSpent}

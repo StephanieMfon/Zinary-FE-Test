@@ -53,26 +53,26 @@ const Navbar = (props: {
 
       <div className="relative mt-[3px] flex h-[61px] w-[355px] flex-grow items-center justify-around gap-2 rounded-full bg-white px-2 py-2 shadow-xl shadow-shadow-500 dark:!bg-cyan-900 dark:shadow-none md:w-[365px] md:flex-grow-0 md:gap-1 xl:w-[365px] xl:gap-2">
         <div className="flex h-full items-center rounded-full bg-lightPrimary text-navy-700 dark:bg-navy-900 dark:text-white xl:w-[225px]">
-          <p className="text-xl pe-2 ps-3">
-            <FiSearch className="h-4 w-4 text-gray-400 dark:text-white" />
+          <p className="pe-2 ps-3 text-xl">
+            <FiSearch className="text-gray-400 h-4 w-4 dark:text-white" />
           </p>
           <input
             type="text"
             placeholder="Search..."
-            className="block h-full w-full rounded-full bg-lightPrimary text-sm font-medium text-navy-700 outline-none placeholder:!text-gray-400 dark:bg-navy-900 dark:text-white dark:placeholder:!text-white sm:w-fit"
+            className="placeholder:!text-gray-400 block h-full w-full rounded-full bg-lightPrimary text-sm font-medium text-navy-700 outline-none dark:bg-navy-900 dark:text-white dark:placeholder:!text-white sm:w-fit"
           />
         </div>
         <span
-          className="flex cursor-pointer text-xl text-gray-600 dark:text-white xl:hidden"
+          className="flex cursor-pointer text-xl text-gray-200 dark:text-white xl:hidden"
           onClick={onOpenSidenav}
         >
-          <FiAlignJustify className="h-5 w-5" />
+          <FiAlignJustify className="h-5 w-5 " />
         </span>
         {/* start Notification */}
-        <Dropdown
+        {/* <Dropdown
           button={
             <p className="cursor-pointer">
-              <IoMdNotificationsOutline className="h-4 w-4 text-gray-600 dark:text-white" />
+              <IoMdNotificationsOutline className="text-gray-600 h-4 w-4 dark:text-white" />
             </p>
           }
           animation="origin-[65%_0%] md:origin-top-start transition-all duration-300 ease-in-out"
@@ -91,8 +91,8 @@ const Navbar = (props: {
                 <div className="flex h-full w-[85px] items-center justify-center rounded-xl bg-gradient-to-b from-brandLinear to-brand-500 py-4 text-2xl text-white">
                   <BsArrowBarUp />
                 </div>
-                <div className="flex h-full w-full flex-col justify-center rounded-lg px-1 text-sm ms-2">
-                  <p className="font-base text-xs text-gray-900 text-start dark:text-white">
+                <div className="ms-2 flex h-full w-full flex-col justify-center rounded-lg px-1 text-sm">
+                  <p className="font-base text-start text-xs text-gray-900 dark:text-white">
                     A new update for your downloaded item is available!
                   </p>
                 </div>
@@ -102,8 +102,8 @@ const Navbar = (props: {
                 <div className="flex h-full w-[85px] items-center justify-center rounded-xl bg-gradient-to-b from-brandLinear to-brand-500 py-4 text-2xl text-white">
                   <BsArrowBarUp />
                 </div>
-                <div className="flex h-full w-full flex-col justify-center rounded-lg px-1 text-sm ms-2">
-                  <p className="font-base text-xs text-gray-900 text-start dark:text-white">
+                <div className="ms-2 flex h-full w-full flex-col justify-center rounded-lg px-1 text-sm">
+                  <p className="font-base text-start text-xs text-gray-900 dark:text-white">
                     A new update for your downloaded item is available!
                   </p>
                 </div>
@@ -111,10 +111,10 @@ const Navbar = (props: {
             </div>
           }
           classNames={"py-2 top-4 -start-[230px] md:-start-[440px] w-max"}
-        />
+        /> */}
 
         <div
-          className="cursor-pointer text-gray-600"
+          className="text-gray-600 cursor-pointer"
           onClick={() => {
             if (darkmode) {
               document.body.classList.remove("dark");
@@ -126,9 +126,9 @@ const Navbar = (props: {
           }}
         >
           {darkmode ? (
-            <RiSunFill className="h-4 w-4 text-gray-600 dark:text-white" />
+            <RiSunFill className="text-gray-600 h-4 w-4 dark:text-white" />
           ) : (
-            <RiMoonFill className="h-4 w-4 text-gray-600 dark:text-white" />
+            <RiMoonFill className="text-gray-600 h-4 w-4 dark:text-white" />
           )}
         </div>
         {/* Profile & Dropdown */}
@@ -142,7 +142,7 @@ const Navbar = (props: {
           }
           children={
             <div className="flex h-48 w-56 flex-col justify-start rounded-[20px] bg-white bg-cover bg-no-repeat shadow-xl shadow-shadow-500 dark:!bg-navy-700 dark:text-white dark:shadow-none">
-              <div className="mt-3 ms-4">
+              <div className="ms-4 mt-3">
                 <div className="flex items-center gap-2">
                   <p className="text-sm font-bold text-navy-700 dark:text-white">
                     👋 Hey, Chris
@@ -151,22 +151,22 @@ const Navbar = (props: {
               </div>
               <div className="mt-3 h-px w-full bg-gray-200 dark:bg-white/20 " />
 
-              <div className="mt-3 flex flex-col ms-4">
+              <div className="ms-4 mt-3 flex flex-col">
                 <a
                   href=" "
-                  className="text-sm text-gray-800 dark:text-white hover:dark:text-white"
+                  className="text-gray-800 text-sm dark:text-white hover:dark:text-white"
                 >
                   Profile Settings
                 </a>
                 <a
                   href=" "
-                  className="mt-3 text-sm text-gray-800 dark:text-white hover:dark:text-white"
+                  className="text-gray-800 mt-3 text-sm dark:text-white hover:dark:text-white"
                 >
                   Newsletter Settings
                 </a>
                 <a
                   href=" "
-                  className="mt-3 text-sm font-medium text-red-500 hover:text-red-500"
+                  className="text-red-500 hover:text-red-500 mt-3 text-sm font-medium"
                 >
                   Log Out
                 </a>

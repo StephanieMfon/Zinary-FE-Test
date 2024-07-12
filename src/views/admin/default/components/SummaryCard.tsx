@@ -18,7 +18,9 @@ export default function SummaryCard() {
             className="list-none border-b  border-solid border-white  p-4  last:border-b-0"
           >
             <p className="text-200  text-[14px] text-white">{title}</p>
-            <p className="text-[22px] font-bold text-white">{amount}</p>
+            <p className="text-[1rem] font-bold text-white md:text-[1.400rem]">
+              {amount}
+            </p>
           </li>
         ))}
       </div>

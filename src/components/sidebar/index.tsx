@@ -19,14 +19,14 @@ const Sidebar = (props: {
       }`}
     >
       <span
-        className="absolute right-4 top-4 block cursor-pointer xl:hidden"
+        className="absolute right-4 top-4 block cursor-pointer text-gray-900 xl:hidden"
         onClick={onClose}
       >
         <HiX />
       </span>
 
       <ul
-        className={`mx-[20px] mb-[35px] mt-[30px] flex-col items-center rounded-[10px] bg-orange-2000 p-[15px]`}
+        className={`mx-[20px] mb-[15px] mt-[30px] flex-col items-center rounded-[10px] bg-orange-2000 p-[15px] md:mb-[35px]`}
       >
         <li className="flex items-center justify-between">
           <p className="text-[16px] font-[700] text-white">General</p>

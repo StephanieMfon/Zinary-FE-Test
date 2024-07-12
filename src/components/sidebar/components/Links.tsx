@@ -20,7 +20,7 @@ export const SidebarLinks = (props: { routes: RoutesType[] }): JSX.Element => {
           // <Link key={index} to={route.layout + "/" + route.path}>
           <Link key={index} to={route.layout}>
             <div
-              className={`relative	mb-3 flex  h-10 hover:cursor-pointer  ${
+              className={`relative	mb-1.5 flex h-10  hover:cursor-pointer md:mb-3  ${
                 activeRoute(route.path) === true ? "bg-orange-1000" : ""
               }`}
             >

@@ -28,16 +28,11 @@ const Navbar = (props: {
             className="block h-full w-full outline-none dark:!bg-cyan-900 dark:text-white sm:w-fit"
           />
         </div>
-        <span
-          className="text-gray-600 flex cursor-pointer text-xl dark:text-white xl:hidden"
-          onClick={onOpenSidenav}
-        >
-          <FiAlignJustify className="h-5 w-5" />
-        </span>
+
         {/* start Notification */}
 
         <div className="flex items-center gap-[20px]">
-          <p className="text-gray-200 ">Sarah Shaibu</p>
+          <p className="whitespace-nowrap text-gray-200">Sarah Shaibu</p>
           <Dropdown
             button={
               <img
@@ -81,7 +76,7 @@ const Navbar = (props: {
             }
             classNames={"py-2 top-8 -left-[180px] w-max"}
           />
-          <div>
+          <div className="hidden md:block">
             <DownArrow />
           </div>
           <div
@@ -102,6 +97,12 @@ const Navbar = (props: {
               <RiMoonFill className="h-4 w-4 text-gray-200 dark:text-white" />
             )}
           </div>
+          <span
+            className="flex cursor-pointer text-xl text-gray-200 dark:text-white xl:hidden"
+            onClick={onOpenSidenav}
+          >
+            <FiAlignJustify className="h-5 w-5" />
+          </span>
         </div>
       </div>
     </nav>

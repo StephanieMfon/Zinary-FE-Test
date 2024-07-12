@@ -39,7 +39,7 @@ const ProductTable = () => {
       <div className="flex flex-col space-y-4 ">
         {/* Table Head */}
         <div className="min-w-[1000px]  rounded-lg bg-gray-1100 p-4 text-white">
-          <div className="flex">
+          <div className="flex items-center">
             <div className="min-w-[100px] flex-1 whitespace-nowrap font-bold">
               S/N
             </div>
@@ -75,7 +75,7 @@ const ProductTable = () => {
               key={index}
               className="min-w-[1000px] rounded-lg bg-white px-5 py-6 font-[15px] text-gray-1000 shadow-[0px_5px_9px_-5px_#0000000D] shadow-none dark:!bg-cyan-900 dark:text-white"
             >
-              <div className="j flex">
+              <div className="flex items-center">
                 <div className="min-w-[100px]  flex-1 whitespace-nowrap text-left">
                   {item.id}
                 </div>
