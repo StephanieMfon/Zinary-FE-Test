@@ -17,7 +17,6 @@ export const SidebarLinks = (props: { routes: RoutesType[] }): JSX.Element => {
     return routes.map((route, index) => {
       {
         return (
-          // <Link key={index} to={route.layout + "/" + route.path}>
           <Link key={index} to={route.layout}>
             <div
               className={`relative	mb-1.5 flex h-10  hover:cursor-pointer md:mb-3  ${
