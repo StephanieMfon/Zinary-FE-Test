@@ -1,39 +1,8 @@
 import TableOptions from "components/icons/Dashboard/TableOptions";
 import elipse from "assets/img/dashboards/elipse.png";
+import { tableData } from "data";
 
-// TODO: If there's time create a type for this model it after the type for the
 const ProductTable = () => {
-  // TODO: Move this up to a parent component- the data
-  const tableData = [
-    {
-      id: "0000001",
-      name: "Tife Balogun",
-      email: "tanya.hill@example.com",
-      transactionType: "Deposit",
-      amount: "₦34,694.145",
-      date: "Dec 4, 2019 21:42",
-      status: "Successful",
-    },
-    {
-      id: "0000001",
-      name: "Kelechi Nwosu",
-      email: "georgia.young@example.com",
-      transactionType: "Withdrawal",
-      amount: "₦784,324.34",
-      date: "Dec 7, 2019 23:26",
-      status: "Failed",
-    },
-    {
-      id: "0000001",
-      name: "Temi Obadofin",
-      email: "deanna.curtis@example.com",
-      transactionType: "Payments",
-      amount: "₦11,784.22",
-      date: "Dec 30, 2019 05:18",
-      status: "Pending",
-    },
-  ];
-
   return (
     <div className="overflow-x-scroll">
       <div className="flex flex-col space-y-4 ">
@@ -73,7 +42,7 @@ const ProductTable = () => {
           {tableData.map((item, index) => (
             <div
               key={index}
-              className="min-w-[1000px] rounded-lg bg-white px-5 py-6 font-[15px] text-gray-1000 shadow-[0px_5px_9px_-5px_#0000000D] shadow-none dark:!bg-cyan-900 dark:text-white"
+              className="dark:!bg-cyan-900 min-w-[1000px] rounded-lg bg-white px-5 py-6 font-[15px] text-gray-1000 shadow-[0px_5px_9px_-5px_#0000000D] shadow-none dark:text-white"
             >
               <div className="flex items-center">
                 <div className="min-w-[100px]  flex-1 whitespace-nowrap text-left">

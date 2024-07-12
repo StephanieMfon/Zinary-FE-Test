@@ -1,3 +1,4 @@
+import DropDownArrow from "components/icons/Dashboard/DropdownArrow";
 import { durationList } from "data";
 import { useState } from "react";
 
@@ -20,19 +21,7 @@ export default function HeaderDropdown() {
         type="button"
       >
         Today
-        {/* TODO: Extract this CSV somewhere */}
-        <svg
-          width="8"
-          height="6"
-          viewBox="0 0 6 4"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0.995212 0.906356C1.04669 0.854839 1.1077 0.829102 1.17821 0.829102H4.82175C4.89229 0.829102 4.95326 0.854839 5.00478 0.906356C5.05629 0.95793 5.08203 1.0189 5.08203 1.08939C5.08203 1.15987 5.05629 1.22084 5.00478 1.27237L3.183 3.09415C3.13142 3.14567 3.07045 3.17146 2.99997 3.17146C2.9295 3.17146 2.86847 3.14567 2.81699 3.09415L0.995212 1.27236C0.943752 1.22084 0.917915 1.15987 0.917915 1.08938C0.917915 1.0189 0.943752 0.95793 0.995212 0.906356Z"
-            fill="#505050"
-          />
-        </svg>
+        <DropDownArrow />
       </button>
 
       {isDropdownOpen && (

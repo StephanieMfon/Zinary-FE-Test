@@ -1,18 +1,6 @@
-import MiniCalendar from "components/calendar/MiniCalendar";
 import TotalSpent from "views/admin/default/components/TotalSpent";
-import { IoMdHome } from "react-icons/io";
-import { IoDocuments } from "react-icons/io5";
-import { MdBarChart, MdDashboard } from "react-icons/md";
-
-import Widget from "components/widget/Widget";
-
-import tableDataCheck from "./variables/tableDataCheck";
-import tableDataComplex from "./variables/tableDataComplex";
-import { useState } from "react";
-import { durationList, financialData } from "data";
 import ProductTable from "./components/TransactionTable";
 import TabSection from "./components/TabSection";
-import Card from "components/card";
 import SummarySection from "./components/SummarySection";
 import SummaryCard from "./components/SummaryCard";
 import HeaderDropdown from "./components/HeaderDropdown";
@@ -20,8 +8,7 @@ import HeaderDropdown from "./components/HeaderDropdown";
 const Dashboard = () => {
   return (
     <div className="mt-6">
-      {/* Card widget */}
-
+      {/* Header */}
       <div className="flex justify-between">
         <h1 className="text-[30px] font-bold text-gray-1000">WalletOverview</h1>
 
@@ -39,11 +26,14 @@ const Dashboard = () => {
         <SummaryCard />
         <TotalSpent />
       </div>
+
       {/* Tab Section */}
+
       <div className="mt-5">
         <TabSection />
       </div>
-      {/* Tables */}
+
+      {/* Table */}
 
       <div className="mt-5">
         <ProductTable />

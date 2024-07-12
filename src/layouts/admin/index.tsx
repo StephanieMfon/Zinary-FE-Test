@@ -2,7 +2,6 @@ import React from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Navbar from "components/navbar";
 import Sidebar from "components/sidebar";
-import Footer from "components/footer/Footer";
 import routes from "routes";
 
 export default function Admin(props: { [x: string]: any }) {
@@ -33,17 +32,7 @@ export default function Admin(props: { [x: string]: any }) {
     }
     return activeRoute;
   };
-  // const getActiveNavbar = (routes: RoutesType[]): string | boolean => {
-  //   let activeNavbar = false;
-  //   for (let i = 0; i < routes.length; i++) {
-  //     if (
-  //       window.location.href.indexOf(routes[i].layout + routes[i].path) !== -1
-  //     ) {
-  //       return routes[i].secondary;
-  //     }
-  //   }
-  //   return activeNavbar;
-  // };
+
   const getRoutes = (routes: RoutesType[]): any => {
     return routes.map((prop, key) => {
       if (prop.layout === "/admin") {
@@ -70,7 +59,6 @@ export default function Admin(props: { [x: string]: any }) {
           <div className="h-full">
             <Navbar
               onOpenSidenav={() => setOpen(true)}
-              brandText={currentRoute}
               // secondary={getActiveNavbar(routes)}
               {...rest}
             />

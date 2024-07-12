@@ -1,7 +1,6 @@
 import React from "react";
 import Dropdown from "components/dropdown";
 import { FiAlignJustify } from "react-icons/fi";
-import { FiSearch } from "react-icons/fi";
 import { RiMoonFill, RiSunFill } from "react-icons/ri";
 import avatar from "assets/img/dashboards/avatar.png";
 import DownArrow from "components/icons/Sidebar/down-arrow";
@@ -9,15 +8,14 @@ import SearchIcon from "components/icons/Navbar/search";
 
 const Navbar = (props: {
   onOpenSidenav: () => void;
-  brandText: string;
   secondary?: boolean | string;
 }) => {
-  const { onOpenSidenav, brandText } = props;
+  const { onOpenSidenav } = props;
   const [darkmode, setDarkmode] = React.useState(false);
 
   return (
     <nav className="sticky top-4 z-40 mb-4 flex flex-row flex-wrap items-center justify-between rounded-xl p-2 backdrop-blur-xl">
-      <div className="relative mt-[3px] flex h-[91px] w-full flex-grow items-center justify-between gap-2 rounded-[10px]  bg-white px-10 py-3 shadow-xl shadow-shadow-500 dark:!bg-cyan-900 dark:shadow-none md:w-full md:flex-grow-0 md:gap-1 xl:w-full xl:gap-2">
+      <div className="dark:!bg-cyan-900 relative mt-[3px] flex h-[91px] w-full flex-grow items-center justify-between gap-2  rounded-[10px] bg-white px-10 py-3 shadow-xl shadow-shadow-500 dark:shadow-none md:w-full md:flex-grow-0 md:gap-1 xl:w-full xl:gap-2">
         <div className="flex h-full items-center  text-navy-700   xl:w-[225px]">
           <p className="pl-3 pr-2 text-xl">
             <SearchIcon />
@@ -25,7 +23,7 @@ const Navbar = (props: {
           <input
             type="text"
             placeholder=""
-            className="block h-full w-full outline-none dark:!bg-cyan-900 dark:text-white sm:w-fit"
+            className="dark:!bg-cyan-900 block h-full w-full outline-none dark:text-white sm:w-fit"
           />
         </div>
 
